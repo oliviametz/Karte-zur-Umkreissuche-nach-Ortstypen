@@ -172,7 +172,8 @@ async function nearbySearch(type) {
 
                 // Adding eventlistener on the chosen type's pins to show the details
 
-                placeMarker.addListener('click', () => {
+ 
+                placeMarker.addEventListener('gmp-click', () => {
                     infoWindow.close();
 
                     const contentDiv = document.createElement('div');
